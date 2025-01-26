@@ -1,0 +1,32 @@
+﻿<Solution SolutionId="9C79D620-F6BD-4685-8D83-377CAEB1D4D6" xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <FeatureManifests>
+    <FeatureManifest Location="InfowiseApprovalSummary\feature.xml" />
+  </FeatureManifests>
+  <Assemblies>
+    <Assembly Location="Infowise.ApprovalSummary.dll" DeploymentTarget="GlobalAssemblyCache" >
+      <SafeControls>
+        <SafeControl Assembly="Infowise.ApprovalSummary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=23853b1f8d5855a5" Namespace="Infowise.Sharepoint.V3.WebParts" TypeName="*" Safe="True" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Images\Infowise\ApprovalSummary\infowise_logo.gif"/>
+    <TemplateFile Location="Images\Infowise\ApprovalSummary\wp-icon.gif"/>
+    <TemplateFile Location="Images\Infowise\ApprovalSummary\approval_summary_small.jpg"/>
+  </TemplateFiles>
+
+  <RootFiles>
+    <RootFile Location="Resources\Infowise.ApprovalSummary.resx"/>
+    <RootFile Location="Resources\Infowise.ApprovalSummary.he-IL.resx"/>
+    <RootFile Location="CONFIG\Resources\Infowise.ApprovalSummary.resx"/>
+    <RootFile Location="CONFIG\Resources\Infowise.ApprovalSummary.he-IL.resx"/>
+    <RootFile Location="Resources\Infowise.ApprovalSummary.en-US.resx"/>
+    <RootFile Location="CONFIG\Resources\Infowise.ApprovalSummary.en-US.resx"/>
+    <RootFile Location="Resources\Infowise.ApprovalSummary.de-DE.resx"/>
+    <RootFile Location="CONFIG\Resources\Infowise.ApprovalSummary.de-DE.resx"/>
+    <RootFile Location="Resources\Infowise.ApprovalSummary.es-ES.resx"/>
+    <RootFile Location="CONFIG\Resources\Infowise.ApprovalSummary.es-ES.resx"/>
+    <RootFile Location="Resources\Infowise.ApprovalSummary.fr-FR.resx"/>
+    <RootFile Location="CONFIG\Resources\Infowise.ApprovalSummary.fr-FR.resx"/>
+  </RootFiles>
+</Solution>

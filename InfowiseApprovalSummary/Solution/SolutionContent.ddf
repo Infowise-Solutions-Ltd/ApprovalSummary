@@ -1,0 +1,34 @@
+.OPTION Explicit
+.Set DiskDirectoryTemplate=CDROM
+.Set CompressionType=MSZIP
+.Set UniqueFiles=Off
+.Set Cabinet=On
+;*************************************
+..\..\Solution\manifest.xml
+Infowise.ApprovalSummary.dll
+
+.Set DestinationDir=InfowiseApprovalSummary
+..\..\Solution\feature.xml
+..\..\Solution\elementManifest.xml
+..\..\Solution\ApprovalSummary.webpart
+
+.Set DestinationDir=Images\Infowise\ApprovalSummary
+..\..\12\Template\Images\Infowise\ApprovalSummary\infowise_logo.gif
+..\..\12\Template\Images\Infowise\ApprovalSummary\wp-icon.gif
+..\..\12\Template\Images\Infowise\ApprovalSummary\approval_summary_small.jpg
+
+.Set DestinationDir = Resources
+..\..\12\Resources\Infowise.ApprovalSummary.resx
+..\..\12\Resources\Infowise.ApprovalSummary.he-IL.resx
+..\..\12\Resources\Infowise.ApprovalSummary.resx Infowise.ApprovalSummary.en-US.resx
+..\..\12\Resources\Infowise.ApprovalSummary.de-DE.resx
+..\..\12\Resources\Infowise.ApprovalSummary.es-ES.resx
+..\..\12\Resources\Infowise.ApprovalSummary.fr-FR.resx
+
+.Set DestinationDir = Config\Resources
+..\..\12\Resources\Infowise.ApprovalSummary.resx
+..\..\12\Resources\Infowise.ApprovalSummary.he-IL.resx
+..\..\12\Resources\Infowise.ApprovalSummary.resx Infowise.ApprovalSummary.en-US.resx
+..\..\12\Resources\Infowise.ApprovalSummary.de-DE.resx
+..\..\12\Resources\Infowise.ApprovalSummary.es-ES.resx
+..\..\12\Resources\Infowise.ApprovalSummary.fr-FR.resx

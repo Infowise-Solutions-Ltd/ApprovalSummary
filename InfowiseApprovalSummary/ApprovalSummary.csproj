@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2CE12A05-1655-43B4-A632-2B220B5C256A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Infowise.Sharepoint.V3.WebParts</RootNamespace>
+    <AssemblyName>Infowise.ApprovalSummary</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SignAssembly>true</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>Properties\infowise.snk</AssemblyOriginatorKeyFile>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\..\inetpub\wwwroot\wss\VirtualDirectories\80\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>URL</StartAction>
+    <StartURL>http://localhost/</StartURL>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <StartAction>URL</StartAction>
+    <StartURL>http://localhost/</StartURL>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint">
+      <HintPath>..\..\..\..\..\Program Files\Common Files\microsoft shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApprovalSummary\ApprovalSummary.cs" />
+    <Compile Include="ApprovalSummary\ApproveHelper.cs" />
+    <Compile Include="ApprovalSummary\FeatureReceivers\ApprovalSummaryFeatureReceiver.cs" />
+    <Compile Include="ApprovalSummary\SettingsPane.cs" />
+    <Compile Include="ApprovalSummary\Templates\ApproveTemplate.cs" />
+    <Compile Include="ApprovalSummary\Templates\CheckTemplate.cs" />
+    <Compile Include="ApprovalSummary\Common.cs" />
+    <Compile Include="ApprovalSummary\Controls\IWBoundField.cs" />
+    <Compile Include="ApprovalSummary\Controls\IWTemplateField.cs" />
+    <Compile Include="ApprovalSummary\Controls\UrlControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApprovalSummary\IconProvider.cs" />
+    <Compile Include="ApprovalSummary\Logger.cs" />
+    <Compile Include="ApprovalSummary\Templates\BooleanFieldTemplate.cs" />
+    <Compile Include="ApprovalSummary\Templates\FieldHelper.cs" />
+    <Compile Include="ApprovalSummary\Templates\GenericField.cs" />
+    <Compile Include="ApprovalSummary\Templates\IconFieldTemplate.cs" />
+    <Compile Include="ApprovalSummary\Templates\LookupField.cs" />
+    <Compile Include="ApprovalSummary\Templates\MenuFieldTemplate.cs" />
+    <Compile Include="ApprovalSummary\Templates\MultiChoiceTemplate.cs" />
+    <Compile Include="ApprovalSummary\Templates\ProgressTemplate.cs" />
+    <Compile Include="ApprovalSummary\Templates\UrlFieldTemplate.cs" />
+    <Compile Include="ApprovalSummary\ucSearchResults.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\infowise.snk" />
+    <None Include="Solution\ApprovalSummary.webpart" />
+    <None Include="Solution\SolutionContent.ddf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="12\Template\Images\Infowise\ApprovalSummary\approval_summary_small.jpg" />
+    <Content Include="12\Template\Images\Infowise\ApprovalSummary\infowise_logo.gif" />
+    <Content Include="12\Template\Images\Infowise\ApprovalSummary\wp-icon.gif" />
+    <EmbeddedResource Include="ApprovalSummary\approval.js" />
+    <Content Include="Solution\elementManifest.xml" />
+    <Content Include="Solution\feature.xml" />
+    <Content Include="Solution\manifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="12\Resources\Infowise.ApprovalSummary.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="12\Resources\Infowise.ApprovalSummary.he-IL.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="12\Resources\Infowise.ApprovalSummary.es-ES.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="12\Resources\Infowise.ApprovalSummary.de-DE.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="12\Resources\Infowise.ApprovalSummary.fr-FR.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>if $(ConfigurationName) == Release (
+makecab.exe /f "..\..\Solution\SolutionContent.ddf" /d CabinetNameTemplate=Infowise.ApprovalSummary.wsp /d DiskDirectory1="%25ProjectDir%25Solution"
+)</PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,17 @@
+﻿<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Infowise.Sharepoint.V3.WebParts.ApprovalSummary, Infowise.ApprovalSummary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=23853b1f8d5855a5" />
+      <importErrorMessage>Cannot import Infowise Approval Summary web part.</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Infowise Approval Summary</property>
+        <property name="Description" type="string">$Resources:Infowise.ApprovalSummary,FeatureDesc;</property>
+        <property name="CatalogIconImageUrl" type="string">/_layouts/images/Infowise/ApprovalSummary/wp-icon.gif</property>
+        <property name="HelpUrl" type="string">http://www.infowisesolutions.com/product.aspx?id=ApprovalSummary</property>
+        <property name="AllowClose" type="bool">False</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

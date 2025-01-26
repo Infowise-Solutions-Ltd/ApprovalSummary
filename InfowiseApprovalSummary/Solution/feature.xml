@@ -1,0 +1,17 @@
+﻿<Feature  Title="Infowise Approval Summary Web Part"
+		      Id="07DD294F-51EA-4b75-88E8-0A3E6B9278A9"
+		      Description="$Resources:Infowise.ApprovalSummary,FeatureDesc;" Version="1.0.0.0"
+		      Scope="Site" Hidden="FALSE"
+		      DefaultResourceFile="core" 
+          xmlns="http://schemas.microsoft.com/sharepoint/"
+          Creator="Infowise Solutions Ltd"
+          ImageUrl="Infowise/ApprovalSummary/approval_summary_small.jpg"
+          ImageUrlAltText="Infowise Ltd"
+          SolutionId="9C79D620-F6BD-4685-8D83-377CAEB1D4D6"
+          ReceiverAssembly="Infowise.ApprovalSummary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=23853b1f8d5855a5"
+          ReceiverClass="Infowise.Sharepoint.V3.WebParts.FeatureReceivers.ApprovalSummaryFeatureReceiver">
+  <ElementManifests>
+    <ElementManifest Location="elementManifest.xml" />
+    <ElementFile Location="ApprovalSummary.webpart" />
+  </ElementManifests>
+</Feature>
